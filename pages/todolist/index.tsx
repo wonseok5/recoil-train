@@ -6,7 +6,9 @@ const TodoListPage: NextPage = () => {
   return (
     <Layout>
       <h1 className="font-bold flex justify-center items-center">TODO LIST</h1>
-      <ul></ul>
+      <ul>
+        <li></li>
+      </ul>
     </Layout>
   );
 };

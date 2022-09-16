@@ -18,14 +18,16 @@ const Layout: FC<Props> = ({ children }) => {
             <h1>Recoil</h1>
           </a>
         </Link>
-        <div className="w-16 h-10 absolute left-3">
-          <Image
-            src="/images/recoil_logo.png"
-            layout="fill"
-            objectFit="contain"
-            alt="logo image"
-          />
-        </div>
+        <Link href={"/"}>
+          <a className="w-16 h-10 absolute left-3">
+            <Image
+              src="/images/recoil_logo.png"
+              layout="fill"
+              objectFit="contain"
+              alt="logo image"
+            />
+          </a>
+        </Link>
       </div>
       <div className="mt-4">{children}</div>
     </div>
