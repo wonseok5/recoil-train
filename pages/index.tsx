@@ -10,7 +10,7 @@ const Home: NextPage = () => {
         <ul>
           <li>
             <Link href={"/todolist"}>
-              <a className="font-bold text-blue-400 text-lg"> - TODO LIST</a>
+              <a className="font-bold text-blue-400 text-lg "> - TODO LIST</a>
             </Link>
           </li>
         </ul>
