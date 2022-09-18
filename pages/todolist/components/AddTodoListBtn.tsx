@@ -14,6 +14,7 @@ const AddTodoListBtn: FC<Props> = () => {
     []
   );
   const onAddTodo = useCallback(() => {
+    setContentInput("");
     setTodoList((prev) => [
       ...prev,
       { id: new Date().getTime(), content: contentInput, isCompleted: false },
@@ -21,10 +22,10 @@ const AddTodoListBtn: FC<Props> = () => {
   }, [contentInput, setTodoList]);
 
   return (
-    <div className="flex flex-col space-y-2 ">
+    <div className="flex flex-col space-y-2 p-4">
       <div className="flex p-2 ">
         <label>
-          content:
+          CONTENT:
           <input
             value={contentInput}
             onChange={onChangeContentInput}

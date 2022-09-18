@@ -12,7 +12,7 @@ const Layout: FC<Props> = ({ children }) => {
       <Head>
         <title>Recoil</title>
       </Head>
-      <div className="border-b-2 p-4 flex justify-center items-center mt-4 relative">
+      <div className=" p-4 flex justify-center items-center mt-4 relative">
         <Link href="/">
           <a className="text-2xl text-bold font-bold">
             <h1>Recoil</h1>
