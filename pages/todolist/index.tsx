@@ -6,11 +6,13 @@ import Layout from "../../components/Layout";
 import AddTodoListBtn from "./components/AddTodoListBtn";
 import EditTodoModal from "./components/EditTodoModal";
 import TodoListItem from "./components/TodoListItem";
-import { todoListState } from "./state";
+import { filteredTodoListState, todoListState } from "./state";
 import { Todo } from "./types";
-
+import cn from "classnames";
+import Filter from "./components/Filter";
+import Summary from "./components/Summary";
 const TodoListPage: NextPage = () => {
-  const todoList = useRecoilValue(todoListState);
+  const todoList = useRecoilValue(filteredTodoListState);
   const [selectedTodo, setSelectedTodo] = useState<Todo | null>(null);
   const onClickBackdrop = useCallback(() => {
     setSelectedTodo(null);
@@ -31,11 +33,13 @@ const TodoListPage: NextPage = () => {
           <AddTodoListBtn />
         </div>
         <div
-          className=""
+          className={cn("relative")}
           onClick={(e: any) => {
             console.log(e.target.dataset);
           }}
         >
+          <Summary />
+          <Filter />
           {todoList.map((todo) => (
             <TodoListItem
               key={todo.id}

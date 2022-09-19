@@ -13,6 +13,14 @@ const Home: NextPage = () => {
               <a className="font-bold text-blue-400 text-lg "> - TODO LIST</a>
             </Link>
           </li>
+          <li>
+            <Link href={"/user-management"}>
+              <a className="font-bold text-blue-400 text-lg ">
+                {" "}
+                - USER MANAGEMENT
+              </a>
+            </Link>
+          </li>
         </ul>
       </div>
     </Layout>
