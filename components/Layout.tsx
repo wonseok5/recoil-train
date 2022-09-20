@@ -10,18 +10,18 @@ const Layout: FC<Props> = ({ children }) => {
   return (
     <div className="container flex flex-col mx-auto">
       <Head>
-        <title>Recoil</title>
+        <title>Sand Box</title>
       </Head>
       <div className=" p-4 flex justify-center items-center mt-4 relative">
         <Link href="/">
           <a className="text-2xl text-bold font-bold">
-            <h1>Recoil</h1>
+            <h1>Sand Box</h1>
           </a>
         </Link>
         <Link href={"/"}>
           <a className="w-16 h-10 absolute left-3">
             <Image
-              src="/images/recoil_logo.png"
+              src="/images/favicon.ico"
               layout="fill"
               objectFit="contain"
               alt="logo image"
